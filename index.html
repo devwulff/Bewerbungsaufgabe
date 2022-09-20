@@ -8,29 +8,35 @@
     <title>Bewerbungsaufgabe i-D</title>
   </head>
   <body>
-    <nav class="nav-menu">
-      <div class="dropdown">
-        <button class="dropbtn">Navigation 1</button>
-        <div class="dropdown-content">
-          <a href="#">Sub navigation 1</a>
-          <a href="#">Sub navigation 2</a>
-          <a href="#">Sub navigation 3</a>
-          <a href="#">Sub navigation 4</a>
-          <a href="#">Sub navigation 5</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Navigation 2</button>
-        <div class="dropdown-content">
-          <a href="#">Sub navigation 1</a>
-          <a href="#">Sub navigation 2</a>
-          <a href="#">Sub navigation 3</a>
-          <a href="#">Sub navigation 4</a>
-          <a href="#">Sub navigation 5</a>
-        </div>
-      </div>
-      <button class="dropbtn">Navigation 3</button>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li class="has-submenu">
+          <a href="#" aria-haspopup="true" aria-expanded="false">
+            Navigation 1
+          </a>
+          <div>
+            <a href="#">Sub Navigation 1</a>
+            <a href="#">Sub Navigation 2</a>
+            <a href="#">Sub Navigation 3</a>
+            <a href="#">Sub Navigation 4</a>
+            <a href="#">Sub Navigation 5</a>
+          </div>
+        </li>
+        <li class="has-submenu">
+          <a href="#" aria-haspopup="true" aria-expanded="false">
+            Navigation 2
+          </a>
+          <div>
+            <a href="#">Sub Navigation 1</a>
+            <a href="#">Sub Navigation 2</a>
+            <a href="#">Sub Navigation 3</a>
+            <a href="#">Sub Navigation 4</a>
+            <a href="#">Sub Navigation 5</a>
+          </div>
+        </li>
+        <li class="no-submenu"><a href="#">Navigation 3</a></li>
+      </ul>
     </nav>
-    <script src="js/script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
